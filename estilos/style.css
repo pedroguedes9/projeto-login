@@ -54,24 +54,71 @@ section p#texto {
     margin-bottom: 10px;
     text-align: justify;
 }
-p#form {
+div.campo {
     background-color: var(--cor1);
-    margin: 5px;
-    position: relative;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    padding: 1px;
+
+}
+div.campo input {
+    text-align: center;
+    background-color: #60d4d1;
+    border: none;
     height: 40px;
-    border-radius: 10px;
+    width: 85%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
 }
-p#form > input {
-    height: 35px;
-    width: 80%;
-    background-color: var(--cor0);
-    position: absolute;top: 50%;
-    left: 59%;
-    transform: translate(-50% , -50%);
-    border-radius: 10px;
-    border: 0px;
+form input:focus-within {
+    background-color: white;
+    outline: none;
+    border: 2px solid #49a09d;
 }
-.material-symbols-rounded{
+form input[type="submit"] {
     color: white;
-    margin-right: 30px;
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 100%;
+    font-size: 1.1em;
+    background-color: #60d4d1;
+    border: none;
+    border-radius: 5px;
+}
+form input[type="submit"]:hover {
+    background-color: #49a09d;
+    cursor: pointer;
+
+}
+label span.material-symbols-rounded{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    transform: translate(7px, 7px);
+}
+form a.botao {
+    margin-top: 10px;
+    text-decoration: none;
+    border: 1px solid var(--cor0);
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    color: #49a09d;
+    height: 40px;
+    padding-top: 7px;
+}
+form a.botao:hover {
+    background-color: #67eee9;
+}
+span#mail {
+    color: #49a09d;
+    font-size: 0.8em;
+
 }
